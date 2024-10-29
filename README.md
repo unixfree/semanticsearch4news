@@ -31,19 +31,9 @@ Quick tips on Python virtual environments (please folow this unless you are an e
 - The above works for *bash* or *zsh*, however you would use `. .venv/bin/activate` if you are using *sh*
 
 - Now download this git repo and cd into it.<br><br>
-`git clone https://github.com/unixfree/semanticsearch4news.git`
+`git clone https://github.com/unixfree/semanticsearch4news.git` <br>
 `cd semanticsearch4news`
 
-### How does this demo work?
-
-You can upload your PDFs with custom data & ask questions about the data in the chat box.
-
-For each question, you will get two answers:
-
-- one using RAG (Couchbase logo)
-- one using pure LLM - OpenAI (🤖).
-
-For RAG, we are using LangChain, Couchbase Vector Search & OpenAI. We fetch parts of the PDF relevant to the question using Vector search & add it as the context to the LLM. The LLM is instructed to answer based on the context from the Vector Store.
 
 ### How to Configure
 
