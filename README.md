@@ -31,7 +31,7 @@ Quick tips on Python virtual environments (please folow this unless you are an e
 - The above works for *bash* or *zsh*, however you would use `. .venv/bin/activate` if you are using *sh*
 
 - Now download this git repo and cd into it.<br><br>
-`git clone https://github.com/jon-strabala/easy-webrag-langchain-demo.git`<br>
+`git clone https://github.com/unixfree/semanticsearch4news.git`
 `cd semanticsearch4news`
 
 ### How does this demo work?
