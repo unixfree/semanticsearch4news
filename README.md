@@ -73,7 +73,8 @@ Quick tips on Python virtual environments (please folow this unless you are an e
 
 6. Run semantic Search
 
-  `python3 search_vector.py' <br>
+  `python3 search_vector.py` <br>
+  
    Enter text to vector search in article : 김정숙  <br>
    Enter text to test search in title : 청문회
 
