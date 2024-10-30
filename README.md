@@ -60,18 +60,20 @@ Quick tips on Python virtual environments (please folow this unless you are an e
 
 - This example always uses and assumes secure connections to your couchbase instance, you should verify your firewall will pass at least 18091 (Management port), 18094 (Search service), 11210 / 11207 (Data service)
 
-4. Create FTS Index from "article-index.json" at Couchbase or Capella 
+4. Create Bucket/Scope/Collection at Couchbase or Capella 
+
+5. Create FTS Index from "article-index.json" at Couchbase or Capella 
  > Data Tools - Search
   - Advanced Mode
   - Import from File < `article-index.json` 
   - Select "Bucket" and "Scope"
   - Create Index
 
-5. Run Cralwing, Vectorize and Load to Couchbase 
+6. Run Cralwing, Vectorize and Load to Couchbase 
 
   `python3 import_news.py`
 
-6. Run semantic Search
+7. Run semantic Search
 
   `python3 search_vector.py` <br>
   
