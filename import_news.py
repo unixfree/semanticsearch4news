@@ -14,9 +14,7 @@ from openai import OpenAI
 
 load_dotenv()
 
-# OpenAI API 키 설정
-# api_key = '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'
-
+# 환경 변수 가져오기 ( .env 파일에서 )
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 DB_CONN_STR = os.getenv("DB_CONN_STR")
 DB_USERNAME = os.getenv("DB_USERNAME")
