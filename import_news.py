@@ -22,7 +22,6 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_BUCKET = os.getenv("DB_BUCKET")
 DB_SCOPE = os.getenv("DB_SCOPE")
 DB_COLLECTION = os.getenv("DB_COLLECTION")
-INDEX_NAME = os.getenv("INDEX_NAME")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL")
 
 client = openai.OpenAI(api_key=OPENAI_API_KEY)
@@ -204,7 +203,7 @@ def store_in_couchbase(article_info):
         "comment_count": article_info['comment_count'],
         "article_vector": article_vector,
         "title_vector": title_vector,
-        "vector_model": "OpenAI API"
+        "vector_model": EMBEDDING_MODEL
     }
     
     # Couchbase에 문서 저장
